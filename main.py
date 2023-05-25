@@ -393,8 +393,6 @@ def guru_poke(vector):  # отработка списка клеток для в
 # main block ======================================================
 """
 
-# print(vector_coord)
-# print(cell_dis_dic)
 
 if sys.platform == 'win32':
     color_mode(False)
