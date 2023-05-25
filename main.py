@@ -143,7 +143,7 @@ def warzone_field_rc(rc):  # декодер координат клетки из
     return [r, c]
 
 
-def warzone_field_nn(r, c):
+def warzone_field_nn(r, c):  # декодер координат клетки из формата [0][1] в формат [01]
     return r * 10 + c
 
 
