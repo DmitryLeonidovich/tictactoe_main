@@ -63,7 +63,7 @@ guru_sign_str = '0'
 
 # крестики ходят первыми
 current_step = 1
-keycode = 24
+key_code = 24
 poke_cnt = 0
 
 cl: List[str] = ['', '', '', '']  # список подсветки вывода (не для Windows)
@@ -409,7 +409,7 @@ else:
 
 while Done:
     if current_step:
-        keycode = user_choice()
+        key_code = user_choice()
         g_res = vectors_update()
     else:
         guru_choice()
@@ -417,7 +417,7 @@ while Done:
         display_warzone()
     current_step = (current_step + 1) & 1
     if g_res[0] or g_res[1] or g_res[2]:
-        keycode = 23
+        key_code = 23
         if g_res[0]:
             print('The computer won!!!')
         elif g_res[1]:
@@ -426,5 +426,5 @@ while Done:
         elif g_res[2]:
             display_warzone()
             print('The game ended in a draw!!!')
-    Done = not keycode == 23
+    Done = not key_code == 23
 print('Game over. Thankyou and bye.')
